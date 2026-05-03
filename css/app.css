@@ -1,0 +1,40 @@
+.sf-hidden {
+    display: none !important
+}
+
+img[src="data:,"],
+source[src="data:,"] {
+    display: none !important
+}
+.textSeo {
+    color: #fff;
+    margin: 50px 0 0;
+}
+.textSeo p {
+    line-height: 1.5;
+    color: #fff;
+}
+.textSeo h1,
+.textSeo h2,
+.textSeo h3 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #fff;
+}
+.textSeo h1:first-child,
+.textSeo h2:first-child,
+.textSeo h3:first-child {
+    margin-top: 0;
+}
+@media (max-width: 767px) {
+    .textSeo {
+        padding: 0 20px!important;
+    }
+    .textSeo h1,
+    .textSeo h2,
+    .textSeo h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
