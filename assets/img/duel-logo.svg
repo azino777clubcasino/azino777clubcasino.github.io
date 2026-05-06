@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" role="img" aria-label="Duel Casino">
+  <defs>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#9be9c2"/>
+    </linearGradient>
+    <filter id="bloom" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- crossed neon sabers -->
+  <g filter="url(#bloom)" stroke-linecap="round">
+    <line x1="80"  y1="40"  x2="720" y2="200" stroke="url(#blade)" stroke-width="6"/>
+    <line x1="80"  y1="200" x2="720" y2="40"  stroke="url(#blade)" stroke-width="6"/>
+    <!-- hilts -->
+    <circle cx="80"  cy="40"  r="9" fill="#00ff88"/>
+    <circle cx="720" cy="40"  r="9" fill="#00ff88"/>
+    <circle cx="80"  cy="200" r="9" fill="#00ff88"/>
+    <circle cx="720" cy="200" r="9" fill="#00ff88"/>
+    <!-- spark -->
+    <circle cx="400" cy="120" r="14" fill="#ffffff" opacity="0.95"/>
+    <circle cx="400" cy="120" r="28" fill="#00ff88" opacity="0.35"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="400" y="155"
+        font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-weight="900"
+        font-size="120"
+        letter-spacing="14"
+        text-anchor="middle"
+        fill="url(#word)"
+        filter="url(#bloom)">DUEL</text>
+</svg>
